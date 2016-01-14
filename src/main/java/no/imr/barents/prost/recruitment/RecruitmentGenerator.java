@@ -1,6 +1,10 @@
-package no.imr.barents.prost;
+package no.imr.barents.prost.recruitment;
 
-abstract class RecruitmentGenerator {
+import no.imr.barents.prost.io.InputReader;
+import no.imr.barents.prost.simulation.RandomGenerator;
+import no.imr.barents.prost.model.StockModel;
+
+public abstract class RecruitmentGenerator {
 	private double trunk;
 
 	private double sd;

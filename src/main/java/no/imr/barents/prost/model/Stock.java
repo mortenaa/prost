@@ -1,8 +1,8 @@
-package no.imr.barents.prost;
+package no.imr.barents.prost.model;
 
 // version 26 aug 2003
 
-interface Stock {
+public interface Stock {
 	public double[] getN(int year);
 
 	public double[] getF(int year);

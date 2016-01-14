@@ -1,15 +1,25 @@
-package no.imr.barents.prost;
+package no.imr.barents.prost.model;
+
+import no.imr.barents.prost.io.InputReader;
+import no.imr.barents.prost.io.OutputWriter;
+import no.imr.barents.prost.Prost;
+import no.imr.barents.prost.management.ConstantFRule;
+import no.imr.barents.prost.management.ManagementRule;
+import no.imr.barents.prost.management.ThreeYearRule;
+import no.imr.barents.prost.recruitment.RecruitmentGenerator;
+import no.imr.barents.prost.simulation.Distortion;
+import no.imr.barents.prost.simulation.RandomGenerator;
+import no.imr.barents.prost.util.Functions;
 
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
 import java.io.PrintStream;
-import java.lang.Math;
 import java.net.ServerSocket;
 import java.net.Socket;
 import java.util.Arrays;
 
-class StockModel implements Stock {
+public class StockModel implements Stock {
 	private int minage; // the real age of ageindex 0
 
 	private int ages; // number of ages (last age is plusgroup)
@@ -918,7 +928,7 @@ private boolean verbose = false;
 	}
 
 	public void initHistoric() {
-		int r=RandomGenerator.nextInt(maxhistoric+1);
+		int r= RandomGenerator.nextInt(maxhistoric+1);
 		if (wmCatchWeight) {
 			for (int y=firstyear+1; y<years; y++)
 				CatchWeight[y]=histCatchWeights[y-firstyear+r];

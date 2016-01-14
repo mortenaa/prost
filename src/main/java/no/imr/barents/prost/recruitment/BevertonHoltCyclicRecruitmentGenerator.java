@@ -1,22 +1,12 @@
-package no.imr.barents.prost;
+package no.imr.barents.prost.recruitment;
 
-class BevertonHoltRecruitmentGenerator extends RecruitmentGenerator {
-	double a;
+import no.imr.barents.prost.io.InputReader;
+import no.imr.barents.prost.model.StockModel;
 
-	double b;
-
-	void readInput(InputReader in) {
-		a = in.expectDouble("a");
-		b = in.expectDouble("b");
-	}
-
-	public double generate(StockModel s, int y) {
-		double ssb = s.getSSB(y);
-		return addError((a * ssb) / (b + ssb));
-	}
-}
-
-class BevertonHoltCyclicRecruitmentGenerator extends RecruitmentGenerator {
+/**
+ * Created by masnes on 14.01.2016.
+ */
+public class BevertonHoltCyclicRecruitmentGenerator extends RecruitmentGenerator {
 	double a;
 	double b;
 	double amp, t, f, k, w;

@@ -1,6 +1,9 @@
-package no.imr.barents.prost;
+package no.imr.barents.prost.recruitment;
 
-class RickerRecruitmentGenerator extends RecruitmentGenerator {
+import no.imr.barents.prost.io.InputReader;
+import no.imr.barents.prost.model.StockModel;
+
+public class RickerRecruitmentGenerator extends RecruitmentGenerator {
 	double a;
 	double b;
     double cutoff;

@@ -1,8 +1,8 @@
-package no.imr.barents.prost;
+package no.imr.barents.prost.simulation;
 
 import java.util.Random;
 
-class RandomGenerator {
+public class RandomGenerator {
 	static Random rand;
 
 	public RandomGenerator() {

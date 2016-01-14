@@ -1,6 +1,6 @@
-package no.imr.barents.prost;
+package no.imr.barents.prost.util;
 
-final class Functions {
+public final class Functions {
 
 	public static double[] applyMortality(double[] F, double[] N, double[] M,
 			double Rec) {

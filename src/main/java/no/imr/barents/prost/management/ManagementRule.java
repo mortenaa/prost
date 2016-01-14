@@ -1,6 +1,10 @@
-package no.imr.barents.prost;
+package no.imr.barents.prost.management;
 
-abstract class ManagementRule {
+import no.imr.barents.prost.io.InputReader;
+import no.imr.barents.prost.io.OutputWriter;
+import no.imr.barents.prost.model.Stock;
+
+public abstract class ManagementRule {
 
 	public abstract double[] generate(Stock s, int year);
 

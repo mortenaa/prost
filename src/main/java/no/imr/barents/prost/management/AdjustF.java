@@ -1,7 +1,7 @@
-package no.imr.barents.prost;
+package no.imr.barents.prost.management;
 
-interface AdjustF {
-	public double adjust(double F, double SSB);
+public interface AdjustF {
+	double adjust(double F, double SSB);
 }
 
 class LinearAdjust implements AdjustF {

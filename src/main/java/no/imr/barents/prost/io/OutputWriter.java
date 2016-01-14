@@ -1,4 +1,4 @@
-package no.imr.barents.prost;
+package no.imr.barents.prost.io;
 
 import java.io.PrintWriter;
 

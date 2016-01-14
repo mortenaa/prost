@@ -1,5 +1,10 @@
 package no.imr.barents.prost;
 
+import no.imr.barents.prost.io.InputReader;
+import no.imr.barents.prost.io.OutputWriter;
+import no.imr.barents.prost.model.StockModel;
+import no.imr.barents.prost.simulation.RandomGenerator;
+
 import java.io.BufferedWriter;
 import java.io.FileWriter;
 

@@ -1,6 +1,11 @@
-package no.imr.barents.prost;
+package no.imr.barents.prost.management;
 
-class ThreeYearRule extends ManagementRule {
+import no.imr.barents.prost.io.InputReader;
+import no.imr.barents.prost.io.OutputWriter;
+import no.imr.barents.prost.model.Stock;
+import no.imr.barents.prost.util.Functions;
+
+public class ThreeYearRule extends ManagementRule {
 
   private int minage, ages, favemin, favemax, faveages, years = 4, realyear;
   private double fpa, fmin;

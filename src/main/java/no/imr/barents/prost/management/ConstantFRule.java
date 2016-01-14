@@ -1,6 +1,11 @@
-package no.imr.barents.prost;
+package no.imr.barents.prost.management;
 
-class ConstantFRule extends ManagementRule {
+import no.imr.barents.prost.util.Functions;
+import no.imr.barents.prost.io.InputReader;
+import no.imr.barents.prost.io.OutputWriter;
+import no.imr.barents.prost.model.Stock;
+
+public class ConstantFRule extends ManagementRule {
 
 	private int minage;
 

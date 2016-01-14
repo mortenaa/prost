@@ -1,4 +1,8 @@
-package no.imr.barents.prost;
+package no.imr.barents.prost.recruitment;
+
+import no.imr.barents.prost.io.InputReader;
+import no.imr.barents.prost.model.StockModel;
+import no.imr.barents.prost.simulation.RandomGenerator;
 
 public class HaddockRecruitmentGenerator extends RecruitmentGenerator {
 
